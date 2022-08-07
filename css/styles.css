@@ -1,0 +1,668 @@
+@font-face {
+    font-family: 'Beau Rivage';
+    src: url('../fonts/BeauRivage-Regular.ttf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+body{
+    background-color: #404040;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+#container{
+    width: 100%;
+    max-width: 2200px;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#actionBar {
+    color: #999966;
+    background-color: #330000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-weight:800;
+    font-size: 22px;
+    height: fit-content;
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+}   
+
+.actionBarItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    height: 40px;
+    width: fit-content;
+    margin: 10px 20px 10px 20px;
+}
+
+.actionBarIcon{
+    margin-right: 5px;
+    filter: invert(66%) sepia(11%) saturate(1014%) hue-rotate(21deg) brightness(88%) contrast(91%);
+}
+
+.actionBarItem:hover{
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.actionBarItem:hover .actionBarIcon {
+    filter: invert(100%) sepia(0%) saturate(7497%) hue-rotate(337deg) brightness(102%) contrast(103%);
+    cursor: pointer;
+}
+
+#navBar {
+    background-color: #101010;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 0px;
+}
+
+#logoTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    height: 100%;
+}
+
+#labradorImage{
+    height: 125px;
+    width: auto;
+    margin: 12px 0px 12px 0px;
+}
+
+#navBarTitle{
+    color: #FFFFFF;
+    font-size: 90px;
+    font-family: 'Beau Rivage';
+    margin: 0px 0px 0px 10px;
+    min-width: 600px;
+}
+
+#logoTitle:hover  #labradorImage{
+    cursor: pointer;
+}
+
+#logoTitle:hover  #title{
+    cursor: pointer;
+}
+
+#navBarItems{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    min-width: 700px;
+    max-width: 800px;
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+
+.navBarText:link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navBarText:visited {
+    color: #FFFFFF;
+}
+
+.navBarText:hover {
+    color: #804d00;
+    cursor: pointer;
+}
+
+#emptyNavBarDiv {
+    width: 5%;
+    height: 100%;
+}
+
+#steakBeerPhoto{
+    width: 100%;
+    height: auto;
+}
+
+
+#home:link{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#home:visited{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#locationContainer{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    padding: 30px 0px 30px 0px;
+    height: 400px;
+    width: 100%;
+}
+
+.hours{
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 4px 0px 0px 0px;
+}
+
+#hoursTopLine{
+    margin: 35px 0px 0px 0px;
+}
+
+#locationTitle{
+    font-size: 36px;
+    font-weight: 400;
+    margin: 30px 0px 4px 0px;
+}
+
+
+
+#slicedSteakPhoto{
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+}
+
+#directionsButton{
+    background-color: #330000;
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 24px;
+    margin: 20px 0px 0px 0px;
+}
+
+#directionsButton:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+#locationAddress{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 0px 8px 0px;
+}
+
+#locationPhone{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0px 0px 16px 0px;
+}
+
+#mapMarker{
+    height: 24px;
+    width: auto;
+    margin: 0px 8px 0px 8px;
+}
+
+#mapMarker:hover{
+    transform:scale(1.5);
+}
+
+#locationPhoneImage{
+    height: 24px;
+    width: auto;
+    margin-right: 8px;
+}
+
+#locationPhoneImage:hover{
+    transform:scale(1.5);
+}
+
+
+.addressPhoneText{
+    margin: 0px 0px 0px 0px;
+    font-size: 20px;
+}
+
+#privateDiningContainer{
+    width: 100%;
+    height: fit-content;
+    background-image: url(../images/spikes.webp);
+    background-size: 200px 200px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content:space-around;
+}
+
+
+#privateDiningLeftColumn{
+    width: 36%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20px 30px 4%;
+}
+
+#privateDiningRightColumn{
+    width: 56%;
+    max-width: 1197px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 4% 30px 20px;
+}
+
+#privateDiningTitle{
+    color: black;
+    text-align: center;
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#privateDiningText{
+    width: 100%;
+    height:fit-content;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(169, 169, 169, 0.3);
+    color: black;
+    font-size: 18px;
+    align-self: center;
+}
+
+#diningTablePhoto{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0px 0px;
+}
+
+#privateEventForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.shortInput{
+    width: 110px;
+    font-size: 18px;
+}
+
+.longInput{
+    width: 80%;
+    max-width: 300px;
+    font-size: 18px;
+}
+
+.privateDiningTextElement{
+    margin: 0px 20px 0px 20px;
+}
+
+#privateDiningParagraph{
+    margin-bottom: 20px;
+}
+
+.privateEventLabel{
+    margin: 16px 0px 0px 0px;
+}
+
+#privateEventButton{
+    background-color: #330000;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 18px;
+    align-self: flex-end;
+    margin: 15px 20px 20px 0px;
+}
+
+#privateEventButton:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:center;
+    background-color: black;
+    color: white;
+    height: fit-content;
+    width: 100%;
+    font-size: 16px;
+    margin: 0px 0px 0px 0px;
+}
+
+#footerTopRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    margin: 30px 0px 0px 0px;
+
+}
+
+#photographyInfoDiv{
+    width: 33%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0px 40px 0px 0px;
+}
+
+
+#photographyInfoText{
+    height: fit-content;
+    width: fit-content;
+    max-width: 450px;
+    margin: 0px 0px 0px 0px;
+}
+
+#footerAddressPhone{
+    height: fit-content;
+    width: 33%;
+    margin: 0px 0px 0px 40px;
+}
+
+#footerName{
+    margin: 2px 0px 2px 0px;
+}
+
+#footerAddress{
+    margin: 2px 0px 2px 0px;
+}
+
+#footerAddress:hover{
+    cursor: pointer;
+    text-decoration:underline; 
+}
+
+#footerPhone{
+    margin: 2px 0px 2px 0px;
+}
+
+#footerPhone:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#footerCenterDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    width: 33%;
+    max-width: 400px;
+    font-size: 18px;
+    color: white;
+}
+
+#socialMediaDiv{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.socialMediaIcons{
+    height: 60px;
+    width: auto;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(298deg) brightness(110%) contrast(100%);
+}
+
+.socialMediaIcons:hover{
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+
+#aboutContainer{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    background-image: url(../images/spikes.webp);
+    background-size: 200px 200px;
+    font-size: 18px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+#aboutTextbox{
+    width: 90%;
+    max-width: 810px;
+    height: fit-content;
+    background-image: url(../images/olga-thelavart-vS3idIiYxX0-unsplash.jpg);
+    background-size: 1250px 1750px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#aboutTitle{
+    font-size: 36px;
+    margin: 50px 0px 0px 0px;
+    text-align: center;
+}
+
+#aboutParagraph{
+    margin: 30px 40px 30px 40px;
+}
+
+
+.decorativeLinePhoto{
+    height: 200px;
+    width: auto;
+    margin: 0px 0px 0px 0px;
+}
+
+#aboutSignatureLine{
+    text-align: right;
+    margin: 0px 20px 20px 0px;
+}
+
+@media only screen and (max-width: 900px) {
+
+    #giftCards{
+        display: none;
+    }
+
+    .actionBarItem{
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        height: 40px;
+        width: fit-content;
+        margin: 0px 20px 0px 20px;
+    }
+    
+
+    #labradorImage{
+        display: none;
+        height: 60px;
+        width: auto;
+        margin: 12px 0px 12px 0px;
+    }
+    
+    #navBarTitle{
+        color: #FFFFFF;
+        font-size: 50px;
+        font-family: 'Beau Rivage';
+        margin: 0px 0px 0px 10px;
+
+    }
+
+    #navBarItems{
+        color: #FFFFFF;
+        font-size: 28px;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:baseline;
+        width: 40%;
+        min-width: 700px;
+        max-width: 800px;
+        margin: 0px 0px 0px 20px;
+        text-transform: uppercase;
+    }
+
+    #footer{
+        font-size: 14px;
+
+    }
+    
+    #footerTopRow{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+
+    #photographyInfoDiv{
+        height: fit-content;
+        width: 100%;
+        font-size: 14px;
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+    }
+
+    #photographyInfoText{
+        margin: 0px 20px 0px 20px;
+    }
+
+    #footerAddressPhone{
+        height: fit-content;
+        width: 100%;
+        font-size: 14px;
+        margin: 10px 20px 10px 20px;
+        text-align: center;
+    }
+
+    #footerCenterDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: fit-content;
+        width: 100%;
+        max-width: 400px;
+        font-size: 14px;
+        color: white;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .navBarText{
+        margin: 6px 0px 6px 0px;
+    }
+
+
+    #locationTitle{
+        font-size: 24px;
+        font-weight: 400;
+        margin: 30px 0px 4px 0px;
+    
+    }
+
+    .addressPhoneText{
+        margin: 0px 10px 0px 0px;
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    #directionsButton{
+        background-color: #330000;
+        color: white;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        padding: 6px 18px;
+        margin: 16px 0px 0px 0px;
+    }
+
+
+    .decorativeLinePhoto{
+        display: none;
+        height: 200px;
+        width: auto;
+        margin: 0px 0px 0px 0px;
+    }
+
+
+    #privateDiningContainer{
+        width: 100%;
+        height: fit-content;
+        background-image: url(../images/spikes.webp);
+        background-size: 200px 200px;
+        margin: 0px 0px 0px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:space-around;
+    }
+
+    #privateDiningLeftColumn{
+        width: 100vw;
+        height: fit-content;
+        margin: 0px 0px 0px 0px
+    }
+
+    #privateDiningRightColumn{
+        width: 100%;
+        height: fit-content;
+        margin: 0px 0px 0px 0px;
+    }
+  }
