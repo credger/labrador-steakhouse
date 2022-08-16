@@ -573,13 +573,15 @@ body{
 
 
     #photographyInfoDiv{
-        height: fit-content;
         width: 100%;
-        font-size: 14px;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         margin: 10px 0px 10px 0px;
         text-align: center;
     }
-
+    
     #photographyInfoText{
         margin: 0px 20px 0px 20px;
     }
